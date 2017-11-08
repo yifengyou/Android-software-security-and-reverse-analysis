@@ -1,0 +1,6 @@
+version: 1.4.1
+apkFileName: stackTrace.apk
+isFrameworkApk: false
+usesFramework:
+  ids:
+  - 1

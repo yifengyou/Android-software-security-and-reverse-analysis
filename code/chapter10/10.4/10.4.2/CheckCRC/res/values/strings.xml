@@ -1,0 +1,7 @@
+<resources>
+
+    <string name="app_name">CheckCRC</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">CheckCRC</string>
+	<string name="crc">597918297</string>
+</resources>

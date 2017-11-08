@@ -1,0 +1,9 @@
+<resources>
+
+    <string name="app_name">Ndkapp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Ndkapp</string>
+	<string name="title_activity_reg">请注册本程序</string>
+	
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <public type="drawable" name="ic_launcher" id="0x7f020001" />
+    <public type="drawable" name="ic_action_search" id="0x7f020000" />
+    <public type="layout" name="activity_main" id="0x7f030000" />
+    <public type="dimen" name="padding_small" id="0x7f040000" />
+    <public type="dimen" name="padding_medium" id="0x7f040001" />
+    <public type="dimen" name="padding_large" id="0x7f040002" />
+    <public type="string" name="app_name" id="0x7f050000" />
+    <public type="string" name="hello_world" id="0x7f050001" />
+    <public type="string" name="menu_settings" id="0x7f050002" />
+    <public type="string" name="title_activity_main" id="0x7f050003" />
+    <public type="style" name="AppTheme" id="0x7f060000" />
+    <public type="menu" name="activity_main" id="0x7f070000" />
+    <public type="id" name="btn_annotation" id="0x7f080000" />
+    <public type="id" name="edt_sn" id="0x7f080001" />
+    <public type="id" name="btn_checksn" id="0x7f080002" />
+    <public type="id" name="menu_settings" id="0x7f080003" />
+</resources>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Antidex2jar</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Antidex2jar</string>
+</resources>

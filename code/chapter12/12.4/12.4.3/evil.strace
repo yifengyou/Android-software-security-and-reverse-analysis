@@ -1,0 +1,1106 @@
+execve("/data/local/tmp/evil.bin", ["/data/local/tmp/evil.bin"], [/* 11 vars */]) = 0
+syscall_983045(0xb0011a48, 0x8, 0, 0xffffffe4, 0xb0011a44, 0xbefdccd0, 0xbefdccd4, 0xf0005, 0, 0, 0, 0, 0, 0xbefdcc78, 0xb00050c3, 0xb000121c, 0x80000010, 0xb0011a48, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0) = 0
+getpid()                                = 395
+sigaction(SIGILL, {0xb0005ad9, [], SA_RESTART}, {SIG_DFL}, 0) = 0
+sigaction(SIGABRT, {0xb0005ad9, [], SA_RESTART}, {SIG_DFL}, 0) = 0
+sigaction(SIGBUS, {0xb0005ad9, [], SA_RESTART}, {SIG_DFL}, 0) = 0
+sigaction(SIGFPE, {0xb0005ad9, [], SA_RESTART}, {SIG_DFL}, 0) = 0
+sigaction(SIGSEGV, {0xb0005ad9, [], SA_RESTART}, {SIG_DFL}, 0) = 0
+sigaction(SIGSTKFLT, {0xb0005ad9, [], SA_RESTART}, {SIG_DFL}, 0) = 0
+sigaction(SIGPIPE, {0xb0005ad9, [], SA_RESTART}, {SIG_DFL}, 0) = 0
+getuid32()                              = 0
+geteuid32()                             = 0
+getgid32()                              = 0
+getegid32()                             = 0
+stat64("/vendor/lib/libc.so", 0xbefdc950) = -1 ENOENT (No such file or directory)
+stat64("/system/lib/libc.so", {st_mode=S_IFREG|0644, st_size=273868, ...}) = 0
+open("/system/lib/libc.so", O_RDONLY|O_LARGEFILE) = 3
+lseek(3, 0, SEEK_SET)                   = 0
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\000"..., 4096) = 4096
+lseek(3, -8, SEEK_END)                  = 273860
+read(3, "\0\0Ð¯PRE ", 8)                = 8
+mmap2(0xafd00000, 319488, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xafd00000
+mmap2(0xafd00000, 259916, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0xafd00000
+mprotect(0xafd00000, 262144, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap2(0xafd40000, 10068, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x40) = 0xafd40000
+mmap2(0xafd43000, 43708, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED|MAP_ANONYMOUS, -1, 0) = 0xafd43000
+close(3)                                = 0
+mprotect(0xafd00000, 262144, PROT_READ|PROT_EXEC) = 0
+getuid32()                              = 0
+geteuid32()                             = 0
+getgid32()                              = 0
+getegid32()                             = 0
+SYS_224(0, 0xbefbd000, 0x20000, 0)      = 395
+syscall_983045(0xafd4d47c, 0xafd4d440, 0, 0x40, 0xafd4d440, 0xbefdccd0, 0x1b6b4, 0xf0005, 0, 0, 0, 0, 0, 0xbefdcb70, 0xafd25e43, 0xafd0c5dc, 0x60000010, 0xafd4d47c, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0) = 0
+mmap2(NULL, 32768, PROT_READ, MAP_SHARED, 8, 0) = 0x40000000
+open("/dev/urandom", O_RDONLY|O_LARGEFILE) = 3
+read(3, "Ú\233\36Ü", 4)                 = 4
+close(3)                                = 0
+stat64("/vendor/lib/libstdc++.so", 0xbefdc950) = -1 ENOENT (No such file or directory)
+stat64("/system/lib/libstdc++.so", {st_mode=S_IFREG|0644, st_size=5388, ...}) = 0
+open("/system/lib/libstdc++.so", O_RDONLY|O_LARGEFILE) = 3
+lseek(3, 0, SEEK_SET)                   = 0
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\000"..., 4096) = 4096
+lseek(3, -8, SEEK_END)                  = 5380
+read(3, "\0\0À¯PRE ", 8)                = 8
+mmap2(0xafc00000, 8192, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xafc00000
+mmap2(0xafc00000, 2852, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0xafc00000
+mprotect(0xafc00000, 4096, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap2(0xafc01000, 276, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x1) = 0xafc01000
+close(3)                                = 0
+mprotect(0xafc00000, 4096, PROT_READ|PROT_EXEC) = 0
+getuid32()                              = 0
+geteuid32()                             = 0
+getgid32()                              = 0
+getegid32()                             = 0
+stat64("/vendor/lib/libm.so", 0xbefdc950) = -1 ENOENT (No such file or directory)
+stat64("/system/lib/libm.so", {st_mode=S_IFREG|0644, st_size=132292, ...}) = 0
+open("/system/lib/libm.so", O_RDONLY|O_LARGEFILE) = 3
+lseek(3, 0, SEEK_SET)                   = 0
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\000"..., 4096) = 4096
+lseek(3, -8, SEEK_END)                  = 132284
+read(3, "\0\0°¯PRE ", 8)                = 8
+mmap2(0xafb00000, 135168, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xafb00000
+mmap2(0xafb00000, 130196, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0xafb00000
+mprotect(0xafb00000, 131072, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap2(0xafb20000, 320, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x20) = 0xafb20000
+close(3)                                = 0
+mprotect(0xafb00000, 131072, PROT_READ|PROT_EXEC) = 0
+getuid32()                              = 0
+geteuid32()                             = 0
+getgid32()                              = 0
+getegid32()                             = 0
+stat64("/vendor/lib/libz.so", 0xbefdc950) = -1 ENOENT (No such file or directory)
+stat64("/system/lib/libz.so", {st_mode=S_IFREG|0644, st_size=83516, ...}) = 0
+open("/system/lib/libz.so", O_RDONLY|O_LARGEFILE) = 3
+lseek(3, 0, SEEK_SET)                   = 0
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\3\0(\0\1\0\0\0\0\0\0\000"..., 4096) = 4096
+lseek(3, -8, SEEK_END)                  = 83508
+read(3, "\0\0p¯PRE ", 8)                = 8
+mmap2(0xaf700000, 86016, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0xaf700000
+mmap2(0xaf700000, 81444, PROT_READ|PROT_EXEC, MAP_PRIVATE|MAP_FIXED, 3, 0) = 0xaf700000
+mprotect(0xaf700000, 81920, PROT_READ|PROT_WRITE|PROT_EXEC) = 0
+mmap2(0xaf714000, 536, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_FIXED, 3, 0x14) = 0xaf714000
+close(3)                                = 0
+mprotect(0xaf700000, 81920, PROT_READ|PROT_EXEC) = 0
+getuid32()                              = 0
+geteuid32()                             = 0
+getgid32()                              = 0
+getegid32()                             = 0
+mprotect(0x8000, 24576, PROT_READ|PROT_EXEC) = 0
+getuid32()                              = 0
+geteuid32()                             = 0
+getgid32()                              = 0
+getegid32()                             = 0
+mmap2(NULL, 4096, PROT_READ|PROT_WRITE, MAP_PRIVATE|MAP_ANONYMOUS, -1, 0) = 0x40008000
+mprotect(0x40008000, 4096, PROT_READ)   = 0
+geteuid32()                             = 0
+sigprocmask(SIG_BLOCK, [CHLD], [])      = 0
+vfork()                                 = 396
+sigaction(SIGINT, {SIG_IGN}, {SIG_DFL}, 0x3) = 0
+sigaction(SIGQUIT, {SIG_IGN}, {SIG_DFL}, 0x3) = 0
+wait4(396, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 396
+sigprocmask(SIG_SETMASK, [], NULL)      = 0
+--- SIGCHLD (Child exited) @ 0 (0) ---
+sigaction(SIGINT, {SIG_DFL}, {SIG_IGN}, 0xb8db) = 0
+sigaction(SIGQUIT, {SIG_DFL}, {SIG_IGN}, 0x3) = 0
+access("/system/lib/libd1.so", F_OK)    = -1 ENOENT (No such file or directory)
+readlink("/proc/self/exe", "/data/local/tmp/evil.bin", 512) = 24
+stat64("/system/bin/rild", {st_mode=S_IFREG|0755, st_size=9796, ...}) = 0
+mprotect(0x40008000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x40008000, 4096, PROT_READ)   = 0
+open("/proc/mounts", O_RDONLY|O_LARGEFILE) = 3
+fstat64(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+brk(0)                                  = 0x10000
+brk(0x10000)                            = 0x10000
+brk(0x11000)                            = 0x11000
+mprotect(0x40008000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x40008000, 4096, PROT_READ)   = 0
+read(3, "rootfs / rootfs ro 0 0\ntmpfs /de"..., 1024) = 455
+mount("/dev/block/mtdblock0", "/system", 0xbefdc059, MS_REMOUNT, 0) = 0
+close(3)                                = 0
+gettimeofday({1349243728, 421646}, NULL) = 0
+gettimeofday({1349243728, 422223}, {4294966816, 0}) = 0
+settimeofday({1296773451, 422223}, {4294966816, 0}) = 0
+lstat64("/system/lib/libd1.so", 0xbefdc180) = -1 ENOENT (No such file or directory)
+unlink("/system/lib/libd1.so")          = -1 ENOENT (No such file or directory)
+sync()                                  = 0
+sync()                                  = 0
+open("/data/local/tmp/evil.bin", O_RDONLY|O_LARGEFILE) = 3
+open("/system/lib/libd1.so", O_RDWR|O_CREAT|O_TRUNC|O_LARGEFILE, 0600) = 4
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\2\0(\0\1\0\0\0p\237\0\000"..., 4096) = 4096
+write(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\2\0(\0\1\0\0\0p\237\0\000"..., 4096) = 4096
+read(3, "Dð\0\0\16\0\0\0\21\0\23\0¦\1\0\0P\237\0\0\0\0\0\0\22\0"..., 4096) = 4096
+write(4, "Dð\0\0\16\0\0\0\21\0\23\0¦\1\0\0P\237\0\0\0\0\0\0\22\0"..., 4096) = 4096
+read(3, "\232X\21x\0)\5ÐÉC\21p\0012\21x\0)ùÑ\227J\232X\21x\0)\5"..., 4096) = 4096
+write(4, "\232X\21x\0)\5ÐÉC\21p\0012\21x\0)ùÑ\227J\232X\21x\0)\5"..., 4096) = 4096
+read(3, ".Û\0-\0Ð.`JF\0*/Ð<J<K>I¢XãX\t­\22h\33hyD"..., 4096) = 4096
+write(4, ".Û\0-\0Ð.`JF\0*/Ð<J<K>I¢XãX\t­\22h\33hyD"..., 4096) = 4096
+read(3, "9\34ý÷@ï\0(òÐ(\34IFý÷:ï\0(ìÐ£|XF\3BèÑ#¬"..., 4096) = 4096
+write(4, "9\34ý÷@ï\0(òÐ(\34IFý÷:ï\0(ìÐ£|XF\3BèÑ#¬"..., 4096) = 4096
+read(3, "\0 %\231ü÷ðî\0(ñÑ\6\235kh\1;\10+ÏØC\232\233\0zDÓX\233\30"..., 4096) = 4096
+write(4, "\0 %\231ü÷ðî\0(ñÑ\6\235kh\1;\10+ÏØC\232\233\0zDÓX\233\30"..., 4096) = 4096
+read(3, "Ð\214\206\214\213\232\222Ð\235\212\226\223\233Ñ\217\215"..., 4096) = 2460
+write(4, "Ð\214\206\214\213\232\222Ð\235\212\226\223\233Ñ\217\215"..., 2460) = 2460
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+close(4)                                = 0
+sync()                                  = 0
+sync()                                  = 0
+chmod("/system/lib/libd1.so", 0755)     = 0
+chown32(0xf014, 0, 0x7d0)               = 0
+lstat64("/system/lib/libd1.so", {st_mode=S_IFREG|0755, st_size=27036, ...}) = 0
+stat64("/system/lib/libd1.so", {st_mode=S_IFREG|0755, st_size=27036, ...}) = 0
+open("/system/lib/libd1.so", O_RDONLY|O_NONBLOCK|O_LARGEFILE) = 3
+ioctl(3, EXT2_IOC_GETFLAGS or EXT3_IOC_GETFLAGS or FIOCLEX, 0xbefdc1ec) = -1 ENOTTY (Not a typewriter)
+close(3)                                = 0
+gettimeofday({1296773451, 582715}, {4294966816, 0}) = 0
+settimeofday({1349243728, 582715}, {4294966816, 0}) = 0
+open("/proc/mounts", O_RDONLY|O_LARGEFILE) = 3
+fstat64(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mprotect(0x40008000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x40008000, 4096, PROT_READ)   = 0
+read(3, "rootfs / rootfs ro 0 0\ntmpfs /de"..., 1024) = 455
+mount("/dev/block/mtdblock0", "/system", 0xbefdc059, MS_RDONLY|MS_REMOUNT, 0) = 0
+close(3)                                = 0
+access("/system/lib/libd1.so", F_OK)    = 0
+readlink("/proc/self/exe", "/data/local/tmp/evil.bin", 512) = 24
+stat64("/system/lib/libd1.so", {st_mode=S_IFREG|0755, st_size=27036, ...}) = 0
+stat64("/system/bin/debuggerd", {st_mode=S_IFREG|0755, st_size=18100, ...}) = 0
+stat64("/system/bin/rild", {st_mode=S_IFREG|0755, st_size=9796, ...}) = 0
+open("/proc/mounts", O_RDONLY|O_LARGEFILE) = 3
+fstat64(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mprotect(0x40008000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x40008000, 4096, PROT_READ)   = 0
+read(3, "rootfs / rootfs ro 0 0\ntmpfs /de"..., 1024) = 455
+mount("/dev/block/mtdblock0", "/system", 0xbefdbe49, MS_REMOUNT, 0) = 0
+close(3)                                = 0
+gettimeofday({1349243728, 649278}, NULL) = 0
+gettimeofday({1349243728, 653751}, {4294966816, 0}) = 0
+settimeofday({1296773451, 653751}, {4294966816, 0}) = 0
+access("/system/framework/debuggerd", F_OK) = -1 ENOENT (No such file or directory)
+open("/system/bin/debuggerd", O_RDONLY|O_LARGEFILE) = 3
+open("/system/framework/debuggerd", O_RDWR|O_CREAT|O_TRUNC|O_LARGEFILE, 0600) = 4
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\2\0(\0\1\0\0\0°\221\0\000"..., 4096) = 4096
+write(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\2\0(\0\1\0\0\0°\221\0\000"..., 4096) = 4096
+read(3, "dñ¼å\0Æ\217â\3Ê\214â\\ñ¼å\0Æ\217â\3Ê\214âTñ¼å\0Æ\217â"..., 4096) = 4096
+write(4, "dñ¼å\0Æ\217â\3Ê\214â\\ñ¼å\0Æ\217â\3Ê\214âTñ¼å\0Æ\217â"..., 4096) = 4096
+read(3, "\2Ð\177JzD\33à\200# \34\4!\32\1þ÷þï\36%#®)àþ÷Xï\1h"..., 4096) = 4096
+write(4, "\2Ð\177JzD\33à\200# \34\4!\32\1þ÷þï\36%#®)àþ÷Xï\1h"..., 4096) = 4096
+read(3, "\222è\4\36\4Úý÷bï\1h\4)óÐ \34ø½\0\22\0\0ðµ\211°\1\220\f"..., 4096) = 4096
+write(4, "\222è\4\36\4Úý÷bï\1h\4)óÐ \34ø½\0\22\0\0ðµ\211°\1\220\f"..., 4096) = 4096
+read(3, "ÿÿÿÿ\0\0\0\0ÿÿÿÿ\0\0\0\0ÿÿÿÿ\0\0\0\0ÿÿÿÿ\0\0\0\0"..., 4096) = 1716
+write(4, "ÿÿÿÿ\0\0\0\0ÿÿÿÿ\0\0\0\0ÿÿÿÿ\0\0\0\0ÿÿÿÿ\0\0\0\0"..., 1716) = 1716
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+close(4)                                = 0
+sync()                                  = 0
+sync()                                  = 0
+chmod("/system/framework/debuggerd", 0755) = 0
+chown32(0xbefdc05c, 0, 0x7d0)           = 0
+lstat64("/system/bin/debuggerd", {st_mode=S_IFREG|0755, st_size=18100, ...}) = 0
+stat64("/system/bin/debuggerd", {st_mode=S_IFREG|0755, st_size=18100, ...}) = 0
+open("/system/bin/debuggerd", O_RDONLY|O_NONBLOCK|O_LARGEFILE) = 3
+ioctl(3, EXT2_IOC_GETFLAGS or EXT3_IOC_GETFLAGS or FIOCLEX, 0xbefdbfdc) = -1 ENOTTY (Not a typewriter)
+close(3)                                = 0
+brk(0x12000)                            = 0x12000
+open("/proc/", O_RDONLY|O_LARGEFILE|O_DIRECTORY) = 3
+umovestr: I/O error
+pivot_root(0x3, "ro 0 0
+tmpfs /dev tmpfs rw,mode=755 0 0
+devpts /dev/pts devpts rw,mode=600 0 0
+proc /proc proc rw 0 0
+sysfs /sys sysfs rw 0 0
+none /acct cgroup rw,cpuacct 0 0
+tmpfs /mnt/asec tmpfs rw,mode=755,gid=1000 0 0
+tmpfs /mnt/obb tmpfs rw,mode=755,gid=1000 0 0
+none /dev/cpuctl cgroup rw,cpu 0 0
+/dev/block/mtdblock0 /system yaffs2 ro 0 0
+/dev/block/mtdblock1 /data yaffs2 rw,nosuid,nodev 0 0
+/dev/block/mtdblock2 /cache yaffs2 rw,nosuid,nodev 0 0
+") = 2808
+lstat64("/proc/binder", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/binder/exe", F_OK)        = -1 ENOENT (No such file or directory)
+lstat64("/proc/mtd", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/sysrq-trigger", {st_mode=S_IFREG|0220, st_size=0, ...}) = 0
+lstat64("/proc/partitions", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/diskstats", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/crypto", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/yaffs", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/kpageflags", {st_mode=S_IFREG|0400, st_size=0, ...}) = 0
+lstat64("/proc/kpagecount", {st_mode=S_IFREG|0400, st_size=0, ...}) = 0
+lstat64("/proc/kmsg", {st_mode=S_IFREG|0440, st_size=0, ...}) = 0
+lstat64("/proc/version", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/uptime", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/stat", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/meminfo", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/loadavg", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/interrupts", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/devices", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/cpuinfo", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/cmdline", {st_mode=S_IFREG|0440, st_size=0, ...}) = 0
+lstat64("/proc/locks", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/filesystems", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/slabinfo", {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+lstat64("/proc/swaps", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/vmallocinfo", {st_mode=S_IFREG|0440, st_size=0, ...}) = 0
+lstat64("/proc/zoneinfo", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/vmstat", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/pagetypeinfo", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/buddyinfo", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/config.gz", {st_mode=S_IFREG|0444, st_size=7087, ...}) = 0
+lstat64("/proc/kallsyms", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/timer_list", {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+lstat64("/proc/iomem", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/ioports", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/execdomains", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/schedstat", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/sched_debug", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/cpu", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/cpu/exe", F_OK)           = -1 ENOENT (No such file or directory)
+lstat64("/proc/misc", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/fb", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/wakelocks", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/irq", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/irq/exe", F_OK)           = -1 ENOENT (No such file or directory)
+lstat64("/proc/cgroups", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/sys", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/sys/exe", F_OK)           = -1 ENOENT (No such file or directory)
+lstat64("/proc/bus", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/bus/exe", F_OK)           = -1 ENOENT (No such file or directory)
+lstat64("/proc/tty", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/tty/exe", F_OK)           = -1 ENOENT (No such file or directory)
+lstat64("/proc/driver", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/driver/exe", F_OK)        = -1 ENOENT (No such file or directory)
+lstat64("/proc/fs", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/fs/exe", F_OK)            = -1 ENOENT (No such file or directory)
+lstat64("/proc/sysvipc", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/sysvipc/exe", F_OK)       = -1 ENOENT (No such file or directory)
+lstat64("/proc/net", {st_mode=S_IFLNK|0777, st_size=8, ...}) = 0
+access("/proc/net/exe", F_OK)           = -1 ENOENT (No such file or directory)
+lstat64("/proc/mounts", {st_mode=S_IFLNK|0777, st_size=11, ...}) = 0
+access("/proc/mounts/exe", F_OK)        = -1 ENOTDIR (Not a directory)
+lstat64("/proc/self", {st_mode=S_IFLNK|0777, st_size=64, ...}) = 0
+access("/proc/self/exe", F_OK)          = 0
+readlink("/proc/self/exe", "/data/local/tmp/evil.bin", 512) = 24
+lstat64("/proc/1", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/1/exe", F_OK)             = 0
+readlink("/proc/1/exe", "/init", 512)   = 5
+lstat64("/proc/2", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/2/exe", F_OK)             = -1 ENOENT (No such file or directory)
+lstat64("/proc/3", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/3/exe", F_OK)             = -1 ENOENT (No such file or directory)
+lstat64("/proc/4", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/4/exe", F_OK)             = -1 ENOENT (No such file or directory)
+lstat64("/proc/5", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/5/exe", F_OK)             = -1 ENOENT (No such file or directory)
+lstat64("/proc/6", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/6/exe", F_OK)             = -1 ENOENT (No such file or directory)
+lstat64("/proc/7", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/7/exe", F_OK)             = -1 ENOENT (No such file or directory)
+lstat64("/proc/8", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/8/exe", F_OK)             = -1 ENOENT (No such file or directory)
+lstat64("/proc/9", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/9/exe", F_OK)             = -1 ENOENT (No such file or directory)
+lstat64("/proc/10", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/10/exe", F_OK)            = -1 ENOENT (No such file or directory)
+lstat64("/proc/11", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/11/exe", F_OK)            = -1 ENOENT (No such file or directory)
+lstat64("/proc/12", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/12/exe", F_OK)            = -1 ENOENT (No such file or directory)
+lstat64("/proc/13", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/13/exe", F_OK)            = -1 ENOENT (No such file or directory)
+lstat64("/proc/14", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/14/exe", F_OK)            = -1 ENOENT (No such file or directory)
+lstat64("/proc/22", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/22/exe", F_OK)            = -1 ENOENT (No such file or directory)
+lstat64("/proc/23", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/23/exe", F_OK)            = -1 ENOENT (No such file or directory)
+lstat64("/proc/24", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/24/exe", F_OK)            = -1 ENOENT (No such file or directory)
+lstat64("/proc/25", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/25/exe", F_OK)            = -1 ENOENT (No such file or directory)
+lstat64("/proc/26", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/26/exe", F_OK)            = 0
+readlink("/proc/26/exe", "/init", 512)  = 5
+lstat64("/proc/27", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/27/exe", F_OK)            = 0
+readlink("/proc/27/exe", "/system/bin/servicemanager", 512) = 26
+lstat64("/proc/28", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/28/exe", F_OK)            = 0
+readlink("/proc/28/exe", "/system/bin/vold", 512) = 16
+lstat64("/proc/29", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/29/exe", F_OK)            = 0
+readlink("/proc/29/exe", "/system/bin/netd", 512) = 16
+lstat64("/proc/30", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/30/exe", F_OK)            = 0
+readlink("/proc/30/exe", "/system/bin/debuggerd", 512) = 21
+kill(30, SIGKILL)                       = 0
+lstat64("/proc/31", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/31/exe", F_OK)            = 0
+readlink("/proc/31/exe", "/system/bin/rild", 512) = 16
+lstat64("/proc/32", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/32/exe", F_OK)            = 0
+readlink("/proc/32/exe", "/system/bin/app_process", 512) = 23
+lstat64("/proc/33", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/33/exe", F_OK)            = 0
+readlink("/proc/33/exe", "/system/bin/mediaserver", 512) = 23
+lstat64("/proc/34", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/34/exe", F_OK)            = 0
+readlink("/proc/34/exe", "/system/bin/installd", 512) = 20
+lstat64("/proc/35", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/35/exe", F_OK)            = 0
+readlink("/proc/35/exe", "/system/bin/keystore", 512) = 20
+lstat64("/proc/37", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/37/exe", F_OK)            = 0
+readlink("/proc/37/exe", "/system/bin/qemud", 512) = 17
+lstat64("/proc/39", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/39/exe", F_OK)            = 0
+readlink("/proc/39/exe", "/system/bin/sh", 512) = 14
+lstat64("/proc/40", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/40/exe", F_OK)            = 0
+readlink("/proc/40/exe", "/sbin/adbd", 512) = 10
+lstat64("/proc/70", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/70/exe", F_OK)            = 0
+readlink("/proc/70/exe", "/system/bin/app_process", 512) = 23
+lstat64("/proc/148", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/148/exe", F_OK)           = 0
+readlink("/proc/148/exe", "/system/bin/app_process", 512) = 23
+lstat64("/proc/153", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/153/exe", F_OK)           = 0
+readlink("/proc/153/exe", "/system/bin/app_process", 512) = 23
+lstat64("/proc/157", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/157/exe", F_OK)           = 0
+readlink("/proc/157/exe", "/system/bin/app_process", 512) = 23
+lstat64("/proc/203", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/203/exe", F_OK)           = 0
+readlink("/proc/203/exe", "/system/bin/app_process", 512) = 23
+lstat64("/proc/207", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/207/exe", F_OK)           = 0
+readlink("/proc/207/exe", "/system/bin/app_process", 512) = 23
+lstat64("/proc/230", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/230/exe", F_OK)           = 0
+readlink("/proc/230/exe", "/system/bin/app_process", 512) = 23
+lstat64("/proc/246", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/246/exe", F_OK)           = 0
+readlink("/proc/246/exe", "/system/bin/app_process", 512) = 23
+lstat64("/proc/262", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/262/exe", F_OK)           = 0
+readlink("/proc/262/exe", "/system/bin/app_process", 512) = 23
+lstat64("/proc/281", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/281/exe", F_OK)           = 0
+readlink("/proc/281/exe", "/system/bin/app_process", 512) = 23
+lstat64("/proc/291", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/291/exe", F_OK)           = 0
+readlink("/proc/291/exe", "/system/bin/app_process", 512) = 23
+lstat64("/proc/303", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/303/exe", F_OK)           = 0
+readlink("/proc/303/exe", "/system/bin/app_process", 512) = 23
+lstat64("/proc/313", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/313/exe", F_OK)           = 0
+readlink("/proc/313/exe", "/system/bin/app_process", 512) = 23
+lstat64("/proc/336", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/336/exe", F_OK)           = 0
+readlink("/proc/336/exe", "/system/bin/app_process", 512) = 23
+lstat64("/proc/353", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/353/exe", F_OK)           = 0
+readlink("/proc/353/exe", "/system/bin/app_process", 512) = 23
+lstat64("/proc/391", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/391/exe", F_OK)           = 0
+readlink("/proc/391/exe", "/system/bin/sh", 512) = 14
+lstat64("/proc/392", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/392/exe", F_OK)           = 0
+readlink("/proc/392/exe", "/system/xbin/tcpdump", 512) = 20
+lstat64("/proc/393", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/393/exe", F_OK)           = 0
+readlink("/proc/393/exe", "/system/bin/sh", 512) = 14
+lstat64("/proc/394", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/394/exe", F_OK)           = 0
+readlink("/proc/394/exe", "/system/xbin/strace", 512) = 19
+lstat64("/proc/395", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/395/exe", F_OK)           = 0
+readlink("/proc/395/exe", "/data/local/tmp/evil.bin", 512) = 24
+umovestr: I/O error
+pivot_root(0x3, "")                    = 0
+close(3)                                = 0
+open("/system/lib/libd1.so", O_RDONLY|O_LARGEFILE) = 3
+open("/system/bin/debuggerd", O_RDWR|O_CREAT|O_TRUNC|O_LARGEFILE, 0600) = -1 ETXTBSY (Text file busy)
+close(3)                                = 0
+chmod("/system/bin/debuggerd", 0755)    = 0
+chown32(0xf288, 0, 0x7d0)               = 0
+lstat64("/system/bin/debuggerd", {st_mode=S_IFREG|0755, st_size=18100, ...}) = 0
+stat64("/system/bin/debuggerd", {st_mode=S_IFREG|0755, st_size=18100, ...}) = 0
+open("/system/bin/debuggerd", O_RDONLY|O_NONBLOCK|O_LARGEFILE) = 3
+ioctl(3, EXT2_IOC_GETFLAGS or EXT3_IOC_GETFLAGS or FIOCLEX, 0xbefdbfdc) = -1 ENOTTY (Not a typewriter)
+close(3)                                = 0
+gettimeofday({1296773452, 573043}, {4294966816, 0}) = 0
+settimeofday({1349243728, 573043}, {4294966816, 0}) = 0
+open("/proc/mounts", O_RDONLY|O_LARGEFILE) = 3
+fstat64(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mprotect(0x40008000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x40008000, 4096, PROT_READ)   = 0
+read(3, "rootfs / rootfs ro 0 0\ntmpfs /de"..., 1024) = 455
+mount("/dev/block/mtdblock0", "/system", 0xbefdbe49, MS_RDONLY|MS_REMOUNT, 0) = 0
+close(3)                                = 0
+stat64("/system/bin/vold", {st_mode=S_IFREG|0755, st_size=51692, ...}) = 0
+stat64("/system/bin/rild", {st_mode=S_IFREG|0755, st_size=9796, ...}) = 0
+open("/proc/mounts", O_RDONLY|O_LARGEFILE) = 3
+fstat64(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mprotect(0x40008000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x40008000, 4096, PROT_READ)   = 0
+read(3, "rootfs / rootfs ro 0 0\ntmpfs /de"..., 1024) = 455
+mount("/dev/block/mtdblock0", "/system", 0xbefdbe49, MS_REMOUNT, 0) = 0
+close(3)                                = 0
+gettimeofday({1349243728, 633806}, NULL) = 0
+gettimeofday({1349243728, 635369}, {4294966816, 0}) = 0
+settimeofday({1296773451, 635369}, {4294966816, 0}) = 0
+access("/system/framework/vold", F_OK)  = -1 ENOENT (No such file or directory)
+open("/system/bin/vold", O_RDONLY|O_LARGEFILE) = 3
+open("/system/framework/vold", O_RDWR|O_CREAT|O_TRUNC|O_LARGEFILE, 0600) = 4
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\2\0(\0\1\0\0\0\20\231\0"..., 4096) = 4096
+write(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\2\0(\0\1\0\0\0\20\231\0"..., 4096) = 4096
+read(3, "t\0fprintf\0strsep\0lseek\0memmove\0s"..., 4096) = 4096
+write(4, "t\0fprintf\0strsep\0lseek\0memmove\0s"..., 4096) = 4096
+read(3, "ÿ÷ôê\31J\32K\0\220zD{D\3 \6!ÿ÷\200ê(\34ÿ÷\232ê\7à\25J"..., 4096) = 4096
+write(4, "ÿ÷ôê\31J\32K\0\220zD{D\3 \6!ÿ÷\200ê(\34ÿ÷\232ê\7à\25J"..., 4096) = 4096
+read(3, "þ÷¬ê\0hþ÷òê<J<KzD{D\0\220\6!\3 þ÷|ê\0.\2Ð"..., 4096) = 4096
+write(4, "þ÷¬ê\0hþ÷òê<J<KzD{D\0\220\6!\3 þ÷|ê\0.\2Ð"..., 4096) = 4096
+read(3, "\20½ÀFpµ\rK\4\34\rH{D\32Xch\0102\"`\230h\3à\205hý÷@ë"..., 4096) = 4096
+write(4, "\20½ÀFpµ\rK\4\34\rH{D\32Xch\0102\"`\230h\3à\205hý÷@ë"..., 4096) = 4096
+read(3, "Ls\0\0¸ÿÿÿ\4K\5I{DZX\0#C`\0102\2`pGÀF4s\0\0"..., 4096) = 4096
+write(4, "Ls\0\0¸ÿÿÿ\4K\5I{DZX\0#C`\0102\2`pGÀF4s\0\0"..., 4096) = 4096
+read(3, "{D\3 \6!*\34û÷\204ê\10\230\0010\10\220<à\0\227?Kçh\4!{"..., 4096) = 4096
+write(4, "{D\3 \6!*\34û÷\204ê\10\230\0010\10\220<à\0\227?Kçh\4!{"..., 4096) = 4096
+read(3, "\5\34\211°|D\0304 \34\1!ú÷Zë\0(\6Ð\'J(K\3 zD{D\5!"..., 4096) = 4096
+write(4, "\5\34\211°|D\0304 \34\1!ú÷Zë\0(\6Ð\'J(K\3 zD{D\5!"..., 4096) = 4096
+read(3, "Ë\4\0\0|+\0\0\20µ\0 ÿ÷¶ÿ\20½ÀF\20µ\1 ÿ÷°ÿ\20½ÀF"..., 4096) = 4096
+write(4, "Ë\4\0\0|+\0\0\20µ\0 ÿ÷¶ÿ\20½ÀF\20µ\1 ÿ÷°ÿ\20½ÀF"..., 4096) = 4096
+read(3, "Unmounting container before dest"..., 4096) = 4096
+write(4, "Unmounting container before dest"..., 4096) = 4096
+read(3, "Failed to get device nodes (%s)\n"..., 4096) = 4096
+write(4, "Failed to get device nodes (%s)\n"..., 4096) = 4096
+read(3, "°«\n\200p¦ÿ\177°ª\35\200X¨ÿ\177«?\n\200\24©ÿ\177dýÿ\177"..., 4096) = 4096
+write(4, "°«\n\200p¦ÿ\177°ª\35\200X¨ÿ\177«?\n\200\24©ÿ\177dýÿ\177"..., 4096) = 4096
+read(3, "ÿÿÿÿ\0\0\0\0ÿÿÿÿ\0\0\0\0ÿÿÿÿ\0\0\0\0ÿÿÿÿ\0\0\0\0"..., 4096) = 2540
+write(4, "ÿÿÿÿ\0\0\0\0ÿÿÿÿ\0\0\0\0ÿÿÿÿ\0\0\0\0ÿÿÿÿ\0\0\0\0"..., 2540) = 2540
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+close(4)                                = 0
+sync()                                  = 0
+sync()                                  = 0
+chmod("/system/framework/vold", 0755)   = 0
+chown32(0xbefdc05c, 0, 0x7d0)           = 0
+lstat64("/system/bin/vold", {st_mode=S_IFREG|0755, st_size=51692, ...}) = 0
+stat64("/system/bin/vold", {st_mode=S_IFREG|0755, st_size=51692, ...}) = 0
+open("/system/bin/vold", O_RDONLY|O_NONBLOCK|O_LARGEFILE) = 3
+ioctl(3, EXT2_IOC_GETFLAGS or EXT3_IOC_GETFLAGS or FIOCLEX, 0xbefdbfdc) = -1 ENOTTY (Not a typewriter)
+close(3)                                = 0
+open("/proc/", O_RDONLY|O_LARGEFILE|O_DIRECTORY) = 3
+umovestr: I/O error
+pivot_root(0x3, "ro 0 0
+tmpfs /dev tmpfs rw,mode=755 0 0
+devpts /dev/pts devpts rw,mode=600 0 0
+proc /proc proc rw 0 0
+sysfs /sys sysfs rw 0 0
+none /acct cgroup rw,cpuacct 0 0
+tmpfs /mnt/asec tmpfs rw,mode=755,gid=1000 0 0
+tmpfs /mnt/obb tmpfs rw,mode=755,gid=1000 0 0
+none /dev/cpuctl cgroup rw,cpu 0 0
+/dev/block/mtdblock0 /system yaffs2 ro 0 0
+/dev/block/mtdblock1 /data yaffs2 rw,nosuid,nodev 0 0
+/dev/block/mtdblock2 /cache yaffs2 rw,nosuid,nodev 0 0
+") = 2808
+lstat64("/proc/binder", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/binder/exe", F_OK)        = -1 ENOENT (No such file or directory)
+lstat64("/proc/mtd", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/sysrq-trigger", {st_mode=S_IFREG|0220, st_size=0, ...}) = 0
+lstat64("/proc/partitions", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/diskstats", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/crypto", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/yaffs", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/kpageflags", {st_mode=S_IFREG|0400, st_size=0, ...}) = 0
+lstat64("/proc/kpagecount", {st_mode=S_IFREG|0400, st_size=0, ...}) = 0
+lstat64("/proc/kmsg", {st_mode=S_IFREG|0440, st_size=0, ...}) = 0
+lstat64("/proc/version", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/uptime", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/stat", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/meminfo", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/loadavg", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/interrupts", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/devices", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/cpuinfo", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/cmdline", {st_mode=S_IFREG|0440, st_size=0, ...}) = 0
+lstat64("/proc/locks", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/filesystems", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/slabinfo", {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+lstat64("/proc/swaps", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/vmallocinfo", {st_mode=S_IFREG|0440, st_size=0, ...}) = 0
+lstat64("/proc/zoneinfo", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/vmstat", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/pagetypeinfo", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/buddyinfo", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/config.gz", {st_mode=S_IFREG|0444, st_size=7087, ...}) = 0
+lstat64("/proc/kallsyms", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/timer_list", {st_mode=S_IFREG|0644, st_size=0, ...}) = 0
+lstat64("/proc/iomem", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/ioports", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/execdomains", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/schedstat", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/sched_debug", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/cpu", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/cpu/exe", F_OK)           = -1 ENOENT (No such file or directory)
+lstat64("/proc/misc", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/fb", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/wakelocks", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/irq", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/irq/exe", F_OK)           = -1 ENOENT (No such file or directory)
+lstat64("/proc/cgroups", {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+lstat64("/proc/sys", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/sys/exe", F_OK)           = -1 ENOENT (No such file or directory)
+lstat64("/proc/bus", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/bus/exe", F_OK)           = -1 ENOENT (No such file or directory)
+lstat64("/proc/tty", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/tty/exe", F_OK)           = -1 ENOENT (No such file or directory)
+lstat64("/proc/driver", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/driver/exe", F_OK)        = -1 ENOENT (No such file or directory)
+lstat64("/proc/fs", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/fs/exe", F_OK)            = -1 ENOENT (No such file or directory)
+lstat64("/proc/sysvipc", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/sysvipc/exe", F_OK)       = -1 ENOENT (No such file or directory)
+lstat64("/proc/net", {st_mode=S_IFLNK|0777, st_size=8, ...}) = 0
+access("/proc/net/exe", F_OK)           = -1 ENOENT (No such file or directory)
+lstat64("/proc/mounts", {st_mode=S_IFLNK|0777, st_size=11, ...}) = 0
+access("/proc/mounts/exe", F_OK)        = -1 ENOTDIR (Not a directory)
+lstat64("/proc/self", {st_mode=S_IFLNK|0777, st_size=64, ...}) = 0
+access("/proc/self/exe", F_OK)          = 0
+readlink("/proc/self/exe", "/data/local/tmp/evil.bin", 512) = 24
+lstat64("/proc/1", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/1/exe", F_OK)             = 0
+readlink("/proc/1/exe", "/init", 512)   = 5
+lstat64("/proc/2", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/2/exe", F_OK)             = -1 ENOENT (No such file or directory)
+lstat64("/proc/3", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/3/exe", F_OK)             = -1 ENOENT (No such file or directory)
+lstat64("/proc/4", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/4/exe", F_OK)             = -1 ENOENT (No such file or directory)
+lstat64("/proc/5", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/5/exe", F_OK)             = -1 ENOENT (No such file or directory)
+lstat64("/proc/6", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/6/exe", F_OK)             = -1 ENOENT (No such file or directory)
+lstat64("/proc/7", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/7/exe", F_OK)             = -1 ENOENT (No such file or directory)
+lstat64("/proc/8", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/8/exe", F_OK)             = -1 ENOENT (No such file or directory)
+lstat64("/proc/9", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/9/exe", F_OK)             = -1 ENOENT (No such file or directory)
+lstat64("/proc/10", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/10/exe", F_OK)            = -1 ENOENT (No such file or directory)
+lstat64("/proc/11", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/11/exe", F_OK)            = -1 ENOENT (No such file or directory)
+lstat64("/proc/12", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/12/exe", F_OK)            = -1 ENOENT (No such file or directory)
+lstat64("/proc/13", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/13/exe", F_OK)            = -1 ENOENT (No such file or directory)
+lstat64("/proc/14", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/14/exe", F_OK)            = -1 ENOENT (No such file or directory)
+lstat64("/proc/22", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/22/exe", F_OK)            = -1 ENOENT (No such file or directory)
+lstat64("/proc/23", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/23/exe", F_OK)            = -1 ENOENT (No such file or directory)
+lstat64("/proc/24", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/24/exe", F_OK)            = -1 ENOENT (No such file or directory)
+lstat64("/proc/25", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/25/exe", F_OK)            = -1 ENOENT (No such file or directory)
+lstat64("/proc/26", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/26/exe", F_OK)            = 0
+readlink("/proc/26/exe", "/init", 512)  = 5
+lstat64("/proc/27", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/27/exe", F_OK)            = 0
+readlink("/proc/27/exe", "/system/bin/servicemanager", 512) = 26
+lstat64("/proc/28", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/28/exe", F_OK)            = 0
+readlink("/proc/28/exe", "/system/bin/vold", 512) = 16
+kill(28, SIGKILL)                       = 0
+lstat64("/proc/29", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/29/exe", F_OK)            = 0
+readlink("/proc/29/exe", "/system/bin/netd", 512) = 16
+lstat64("/proc/31", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/31/exe", F_OK)            = 0
+readlink("/proc/31/exe", "/system/bin/rild", 512) = 16
+lstat64("/proc/32", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/32/exe", F_OK)            = 0
+readlink("/proc/32/exe", "/system/bin/app_process", 512) = 23
+lstat64("/proc/33", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/33/exe", F_OK)            = 0
+readlink("/proc/33/exe", "/system/bin/mediaserver", 512) = 23
+lstat64("/proc/34", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/34/exe", F_OK)            = 0
+readlink("/proc/34/exe", "/system/bin/installd", 512) = 20
+lstat64("/proc/35", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/35/exe", F_OK)            = 0
+readlink("/proc/35/exe", "/system/bin/keystore", 512) = 20
+lstat64("/proc/37", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/37/exe", F_OK)            = 0
+readlink("/proc/37/exe", "/system/bin/qemud", 512) = 17
+lstat64("/proc/39", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/39/exe", F_OK)            = 0
+readlink("/proc/39/exe", "/system/bin/sh", 512) = 14
+lstat64("/proc/40", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/40/exe", F_OK)            = 0
+readlink("/proc/40/exe", "/sbin/adbd", 512) = 10
+lstat64("/proc/70", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/70/exe", F_OK)            = 0
+readlink("/proc/70/exe", "/system/bin/app_process", 512) = 23
+lstat64("/proc/148", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/148/exe", F_OK)           = 0
+readlink("/proc/148/exe", "/system/bin/app_process", 512) = 23
+lstat64("/proc/153", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/153/exe", F_OK)           = 0
+readlink("/proc/153/exe", "/system/bin/app_process", 512) = 23
+lstat64("/proc/157", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/157/exe", F_OK)           = 0
+readlink("/proc/157/exe", "/system/bin/app_process", 512) = 23
+lstat64("/proc/203", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/203/exe", F_OK)           = 0
+readlink("/proc/203/exe", "/system/bin/app_process", 512) = 23
+lstat64("/proc/207", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/207/exe", F_OK)           = 0
+readlink("/proc/207/exe", "/system/bin/app_process", 512) = 23
+lstat64("/proc/230", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/230/exe", F_OK)           = 0
+readlink("/proc/230/exe", "/system/bin/app_process", 512) = 23
+lstat64("/proc/246", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/246/exe", F_OK)           = 0
+readlink("/proc/246/exe", "/system/bin/app_process", 512) = 23
+lstat64("/proc/262", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/262/exe", F_OK)           = 0
+readlink("/proc/262/exe", "/system/bin/app_process", 512) = 23
+lstat64("/proc/281", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/281/exe", F_OK)           = 0
+readlink("/proc/281/exe", "/system/bin/app_process", 512) = 23
+lstat64("/proc/291", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/291/exe", F_OK)           = 0
+readlink("/proc/291/exe", "/system/bin/app_process", 512) = 23
+lstat64("/proc/303", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/303/exe", F_OK)           = 0
+readlink("/proc/303/exe", "/system/bin/app_process", 512) = 23
+lstat64("/proc/313", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/313/exe", F_OK)           = 0
+readlink("/proc/313/exe", "/system/bin/app_process", 512) = 23
+lstat64("/proc/336", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/336/exe", F_OK)           = 0
+readlink("/proc/336/exe", "/system/bin/app_process", 512) = 23
+lstat64("/proc/353", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/353/exe", F_OK)           = 0
+readlink("/proc/353/exe", "/system/bin/app_process", 512) = 23
+lstat64("/proc/391", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/391/exe", F_OK)           = 0
+readlink("/proc/391/exe", "/system/bin/sh", 512) = 14
+lstat64("/proc/392", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/392/exe", F_OK)           = 0
+readlink("/proc/392/exe", "/system/xbin/tcpdump", 512) = 20
+lstat64("/proc/393", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/393/exe", F_OK)           = 0
+readlink("/proc/393/exe", "/system/bin/sh", 512) = 14
+lstat64("/proc/394", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/394/exe", F_OK)           = 0
+readlink("/proc/394/exe", "/system/xbin/strace", 512) = 19
+lstat64("/proc/395", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/395/exe", F_OK)           = 0
+readlink("/proc/395/exe", "/data/local/tmp/evil.bin", 512) = 24
+lstat64("/proc/398", {st_mode=S_IFDIR|0555, st_size=0, ...}) = 0
+access("/proc/398/exe", F_OK)           = 0
+readlink("/proc/398/exe", "/system/bin/debuggerd", 512) = 21
+umovestr: I/O error
+pivot_root(0x3, "")                    = 0
+close(3)                                = 0
+open("/system/lib/libd1.so", O_RDONLY|O_LARGEFILE) = 3
+open("/system/bin/vold", O_RDWR|O_CREAT|O_TRUNC|O_LARGEFILE, 0600) = -1 ETXTBSY (Text file busy)
+close(3)                                = 0
+chmod("/system/bin/vold", 0755)         = 0
+chown32(0xf2a0, 0, 0x7d0)               = 0
+lstat64("/system/bin/vold", {st_mode=S_IFREG|0755, st_size=51692, ...}) = 0
+stat64("/system/bin/vold", {st_mode=S_IFREG|0755, st_size=51692, ...}) = 0
+open("/system/bin/vold", O_RDONLY|O_NONBLOCK|O_LARGEFILE) = 3
+ioctl(3, EXT2_IOC_GETFLAGS or EXT3_IOC_GETFLAGS or FIOCLEX, 0xbefdbfdc) = -1 ENOTTY (Not a typewriter)
+close(3)                                = 0
+gettimeofday({1296773452, 700808}, {4294966816, 0}) = 0
+settimeofday({1349243728, 700808}, {4294966816, 0}) = 0
+open("/proc/mounts", O_RDONLY|O_LARGEFILE) = 3
+fstat64(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mprotect(0x40008000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x40008000, 4096, PROT_READ)   = 0
+read(3, "rootfs / rootfs ro 0 0\ntmpfs /de"..., 1024) = 455
+mount("/dev/block/mtdblock0", "/system", 0xbefdbe49, MS_RDONLY|MS_REMOUNT, 0) = 0
+close(3)                                = 0
+access("/system/bin/dhcpcdd", F_OK)     = -1 ENOENT (No such file or directory)
+access("/system/bin/installdd", F_OK)   = -1 ENOENT (No such file or directory)
+access("/system/lib/libd1.so", F_OK)    = 0
+stat64("/system/lib/libd1.so", {st_mode=S_IFREG|0755, st_size=27036, ...}) = 0
+access("/system/bin/rm", F_OK)          = 0
+lstat64("/system/bin/rm", {st_mode=S_IFLNK|0755, st_size=7, ...}) = 0
+stat64("/system/bin/rild", {st_mode=S_IFREG|0755, st_size=9796, ...}) = 0
+open("/proc/mounts", O_RDONLY|O_LARGEFILE) = 3
+fstat64(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mprotect(0x40008000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x40008000, 4096, PROT_READ)   = 0
+read(3, "rootfs / rootfs ro 0 0\ntmpfs /de"..., 1024) = 455
+mount("/dev/block/mtdblock0", "/system", 0xbefdc059, MS_REMOUNT, 0) = 0
+close(3)                                = 0
+gettimeofday({1349243728, 767708}, NULL) = 0
+gettimeofday({1349243728, 768542}, {4294966816, 0}) = 0
+settimeofday({1296773451, 768542}, {4294966816, 0}) = 0
+lstat64("/system/bin/rm", {st_mode=S_IFLNK|0755, st_size=7, ...}) = 0
+stat64("/system/bin/rm", {st_mode=S_IFREG|0755, st_size=81548, ...}) = 0
+open("/system/bin/rm", O_RDONLY|O_NONBLOCK|O_LARGEFILE) = 3
+ioctl(3, EXT2_IOC_GETFLAGS or EXT3_IOC_GETFLAGS or FIOCLEX, 0xbefdc1ec) = -1 ENOTTY (Not a typewriter)
+close(3)                                = 0
+unlink("/system/bin/rm")                = 0
+sync()                                  = 0
+sync()                                  = 0
+open("/system/lib/libd1.so", O_RDONLY|O_LARGEFILE) = 3
+open("/system/bin/rm", O_RDWR|O_CREAT|O_TRUNC|O_LARGEFILE, 0600) = 4
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\2\0(\0\1\0\0\0p\237\0\000"..., 4096) = 4096
+write(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\2\0(\0\1\0\0\0p\237\0\000"..., 4096) = 4096
+read(3, "Dð\0\0\16\0\0\0\21\0\23\0¦\1\0\0P\237\0\0\0\0\0\0\22\0"..., 4096) = 4096
+write(4, "Dð\0\0\16\0\0\0\21\0\23\0¦\1\0\0P\237\0\0\0\0\0\0\22\0"..., 4096) = 4096
+read(3, "\232X\21x\0)\5ÐÉC\21p\0012\21x\0)ùÑ\227J\232X\21x\0)\5"..., 4096) = 4096
+write(4, "\232X\21x\0)\5ÐÉC\21p\0012\21x\0)ùÑ\227J\232X\21x\0)\5"..., 4096) = 4096
+read(3, ".Û\0-\0Ð.`JF\0*/Ð<J<K>I¢XãX\t­\22h\33hyD"..., 4096) = 4096
+write(4, ".Û\0-\0Ð.`JF\0*/Ð<J<K>I¢XãX\t­\22h\33hyD"..., 4096) = 4096
+read(3, "9\34ý÷@ï\0(òÐ(\34IFý÷:ï\0(ìÐ£|XF\3BèÑ#¬"..., 4096) = 4096
+write(4, "9\34ý÷@ï\0(òÐ(\34IFý÷:ï\0(ìÐ£|XF\3BèÑ#¬"..., 4096) = 4096
+read(3, "\0 %\231ü÷ðî\0(ñÑ\6\235kh\1;\10+ÏØC\232\233\0zDÓX\233\30"..., 4096) = 4096
+write(4, "\0 %\231ü÷ðî\0(ñÑ\6\235kh\1;\10+ÏØC\232\233\0zDÓX\233\30"..., 4096) = 4096
+read(3, "Ð\214\206\214\213\232\222Ð\235\212\226\223\233Ñ\217\215"..., 4096) = 2460
+write(4, "Ð\214\206\214\213\232\222Ð\235\212\226\223\233Ñ\217\215"..., 2460) = 2460
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+close(4)                                = 0
+sync()                                  = 0
+sync()                                  = 0
+chmod("/system/bin/rm", 0755)           = 0
+chown32(0xf2c8, 0, 0x7d0)               = 0
+lstat64("/system/bin/rm", {st_mode=S_IFREG|0755, st_size=27036, ...}) = 0
+stat64("/system/bin/rm", {st_mode=S_IFREG|0755, st_size=27036, ...}) = 0
+open("/system/bin/rm", O_RDONLY|O_NONBLOCK|O_LARGEFILE) = 3
+ioctl(3, EXT2_IOC_GETFLAGS or EXT3_IOC_GETFLAGS or FIOCLEX, 0xbefdc1ec) = -1 ENOTTY (Not a typewriter)
+close(3)                                = 0
+gettimeofday({1296773451, 965863}, {4294966816, 0}) = 0
+settimeofday({1349243728, 965863}, {4294966816, 0}) = 0
+open("/proc/mounts", O_RDONLY|O_LARGEFILE) = 3
+fstat64(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mprotect(0x40008000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x40008000, 4096, PROT_READ)   = 0
+read(3, "rootfs / rootfs ro 0 0\ntmpfs /de"..., 1024) = 455
+mount("/dev/block/mtdblock0", "/system", 0xbefdc059, MS_RDONLY|MS_REMOUNT, 0) = 0
+close(3)                                = 0
+access("/system/bin/move", F_OK)        = -1 ENOENT (No such file or directory)
+stat64("/system/bin/rild", {st_mode=S_IFREG|0755, st_size=9796, ...}) = 0
+open("/proc/mounts", O_RDONLY|O_LARGEFILE) = 3
+fstat64(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mprotect(0x40008000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x40008000, 4096, PROT_READ)   = 0
+read(3, "rootfs / rootfs ro 0 0\ntmpfs /de"..., 1024) = 455
+mount("/dev/block/mtdblock0", "/system", 0xbefdc059, MS_REMOUNT, 0) = 0
+close(3)                                = 0
+gettimeofday({1349243729, 31038}, NULL) = 0
+gettimeofday({1349243729, 31565}, {4294966816, 0}) = 0
+settimeofday({1296773451, 31565}, {4294966816, 0}) = 0
+lstat64("/system/bin/move", 0xbefdc180) = -1 ENOENT (No such file or directory)
+unlink("/system/bin/move")              = -1 ENOENT (No such file or directory)
+sync()                                  = 0
+sync()                                  = 0
+open("/system/lib/libd1.so", O_RDONLY|O_LARGEFILE) = 3
+open("/system/bin/move", O_RDWR|O_CREAT|O_TRUNC|O_LARGEFILE, 0600) = 4
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\2\0(\0\1\0\0\0p\237\0\000"..., 4096) = 4096
+write(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\2\0(\0\1\0\0\0p\237\0\000"..., 4096) = 4096
+read(3, "Dð\0\0\16\0\0\0\21\0\23\0¦\1\0\0P\237\0\0\0\0\0\0\22\0"..., 4096) = 4096
+write(4, "Dð\0\0\16\0\0\0\21\0\23\0¦\1\0\0P\237\0\0\0\0\0\0\22\0"..., 4096) = 4096
+read(3, "\232X\21x\0)\5ÐÉC\21p\0012\21x\0)ùÑ\227J\232X\21x\0)\5"..., 4096) = 4096
+write(4, "\232X\21x\0)\5ÐÉC\21p\0012\21x\0)ùÑ\227J\232X\21x\0)\5"..., 4096) = 4096
+read(3, ".Û\0-\0Ð.`JF\0*/Ð<J<K>I¢XãX\t­\22h\33hyD"..., 4096) = 4096
+write(4, ".Û\0-\0Ð.`JF\0*/Ð<J<K>I¢XãX\t­\22h\33hyD"..., 4096) = 4096
+read(3, "9\34ý÷@ï\0(òÐ(\34IFý÷:ï\0(ìÐ£|XF\3BèÑ#¬"..., 4096) = 4096
+write(4, "9\34ý÷@ï\0(òÐ(\34IFý÷:ï\0(ìÐ£|XF\3BèÑ#¬"..., 4096) = 4096
+read(3, "\0 %\231ü÷ðî\0(ñÑ\6\235kh\1;\10+ÏØC\232\233\0zDÓX\233\30"..., 4096) = 4096
+write(4, "\0 %\231ü÷ðî\0(ñÑ\6\235kh\1;\10+ÏØC\232\233\0zDÓX\233\30"..., 4096) = 4096
+read(3, "Ð\214\206\214\213\232\222Ð\235\212\226\223\233Ñ\217\215"..., 4096) = 2460
+write(4, "Ð\214\206\214\213\232\222Ð\235\212\226\223\233Ñ\217\215"..., 2460) = 2460
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+close(4)                                = 0
+sync()                                  = 0
+sync()                                  = 0
+chmod("/system/bin/move", 0755)         = 0
+chown32(0xf2d8, 0, 0x7d0)               = 0
+lstat64("/system/bin/move", {st_mode=S_IFREG|0755, st_size=27036, ...}) = 0
+stat64("/system/bin/move", {st_mode=S_IFREG|0755, st_size=27036, ...}) = 0
+open("/system/bin/move", O_RDONLY|O_NONBLOCK|O_LARGEFILE) = 3
+ioctl(3, EXT2_IOC_GETFLAGS or EXT3_IOC_GETFLAGS or FIOCLEX, 0xbefdc1ec) = -1 ENOTTY (Not a typewriter)
+close(3)                                = 0
+gettimeofday({1296773451, 207061}, {4294966816, 0}) = 0
+settimeofday({1349243729, 207061}, {4294966816, 0}) = 0
+open("/proc/mounts", O_RDONLY|O_LARGEFILE) = 3
+fstat64(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mprotect(0x40008000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x40008000, 4096, PROT_READ)   = 0
+read(3, "rootfs / rootfs ro 0 0\ntmpfs /de"..., 1024) = 455
+mount("/dev/block/mtdblock0", "/system", 0xbefdc059, MS_RDONLY|MS_REMOUNT, 0) = 0
+close(3)                                = 0
+access("/system/bin/mount", F_OK)       = 0
+lstat64("/system/bin/mount", {st_mode=S_IFLNK|0755, st_size=7, ...}) = 0
+stat64("/system/bin/rild", {st_mode=S_IFREG|0755, st_size=9796, ...}) = 0
+open("/proc/mounts", O_RDONLY|O_LARGEFILE) = 3
+fstat64(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mprotect(0x40008000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x40008000, 4096, PROT_READ)   = 0
+read(3, "rootfs / rootfs ro 0 0\ntmpfs /de"..., 1024) = 455
+mount("/dev/block/mtdblock0", "/system", 0xbefdc059, MS_REMOUNT, 0) = 0
+close(3)                                = 0
+gettimeofday({1349243729, 257647}, NULL) = 0
+gettimeofday({1349243729, 258769}, {4294966816, 0}) = 0
+settimeofday({1296773451, 258769}, {4294966816, 0}) = 0
+lstat64("/system/bin/mount", {st_mode=S_IFLNK|0755, st_size=7, ...}) = 0
+stat64("/system/bin/mount", {st_mode=S_IFREG|0755, st_size=81548, ...}) = 0
+open("/system/bin/mount", O_RDONLY|O_NONBLOCK|O_LARGEFILE) = 3
+ioctl(3, EXT2_IOC_GETFLAGS or EXT3_IOC_GETFLAGS or FIOCLEX, 0xbefdc1ec) = -1 ENOTTY (Not a typewriter)
+close(3)                                = 0
+unlink("/system/bin/mount")             = 0
+sync()                                  = 0
+sync()                                  = 0
+open("/system/lib/libd1.so", O_RDONLY|O_LARGEFILE) = 3
+open("/system/bin/mount", O_RDWR|O_CREAT|O_TRUNC|O_LARGEFILE, 0600) = 4
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\2\0(\0\1\0\0\0p\237\0\000"..., 4096) = 4096
+write(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\2\0(\0\1\0\0\0p\237\0\000"..., 4096) = 4096
+read(3, "Dð\0\0\16\0\0\0\21\0\23\0¦\1\0\0P\237\0\0\0\0\0\0\22\0"..., 4096) = 4096
+write(4, "Dð\0\0\16\0\0\0\21\0\23\0¦\1\0\0P\237\0\0\0\0\0\0\22\0"..., 4096) = 4096
+read(3, "\232X\21x\0)\5ÐÉC\21p\0012\21x\0)ùÑ\227J\232X\21x\0)\5"..., 4096) = 4096
+write(4, "\232X\21x\0)\5ÐÉC\21p\0012\21x\0)ùÑ\227J\232X\21x\0)\5"..., 4096) = 4096
+read(3, ".Û\0-\0Ð.`JF\0*/Ð<J<K>I¢XãX\t­\22h\33hyD"..., 4096) = 4096
+write(4, ".Û\0-\0Ð.`JF\0*/Ð<J<K>I¢XãX\t­\22h\33hyD"..., 4096) = 4096
+read(3, "9\34ý÷@ï\0(òÐ(\34IFý÷:ï\0(ìÐ£|XF\3BèÑ#¬"..., 4096) = 4096
+write(4, "9\34ý÷@ï\0(òÐ(\34IFý÷:ï\0(ìÐ£|XF\3BèÑ#¬"..., 4096) = 4096
+read(3, "\0 %\231ü÷ðî\0(ñÑ\6\235kh\1;\10+ÏØC\232\233\0zDÓX\233\30"..., 4096) = 4096
+write(4, "\0 %\231ü÷ðî\0(ñÑ\6\235kh\1;\10+ÏØC\232\233\0zDÓX\233\30"..., 4096) = 4096
+read(3, "Ð\214\206\214\213\232\222Ð\235\212\226\223\233Ñ\217\215"..., 4096) = 2460
+write(4, "Ð\214\206\214\213\232\222Ð\235\212\226\223\233Ñ\217\215"..., 2460) = 2460
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+close(4)                                = 0
+sync()                                  = 0
+sync()                                  = 0
+chmod("/system/bin/mount", 0755)        = 0
+chown32(0xf2ec, 0, 0x7d0)               = 0
+lstat64("/system/bin/mount", {st_mode=S_IFREG|0755, st_size=27036, ...}) = 0
+stat64("/system/bin/mount", {st_mode=S_IFREG|0755, st_size=27036, ...}) = 0
+open("/system/bin/mount", O_RDONLY|O_NONBLOCK|O_LARGEFILE) = 3
+ioctl(3, EXT2_IOC_GETFLAGS or EXT3_IOC_GETFLAGS or FIOCLEX, 0xbefdc1ec) = -1 ENOTTY (Not a typewriter)
+close(3)                                = 0
+gettimeofday({1296773451, 441430}, {4294966816, 0}) = 0
+settimeofday({1349243729, 441430}, {4294966816, 0}) = 0
+open("/proc/mounts", O_RDONLY|O_LARGEFILE) = 3
+fstat64(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mprotect(0x40008000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x40008000, 4096, PROT_READ)   = 0
+read(3, "rootfs / rootfs ro 0 0\ntmpfs /de"..., 1024) = 455
+mount("/dev/block/mtdblock0", "/system", 0xbefdc059, MS_RDONLY|MS_REMOUNT, 0) = 0
+close(3)                                = 0
+access("/system/bin/ifconfig", F_OK)    = 0
+lstat64("/system/bin/ifconfig", {st_mode=S_IFLNK|0755, st_size=7, ...}) = 0
+stat64("/system/bin/rild", {st_mode=S_IFREG|0755, st_size=9796, ...}) = 0
+open("/proc/mounts", O_RDONLY|O_LARGEFILE) = 3
+fstat64(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mprotect(0x40008000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x40008000, 4096, PROT_READ)   = 0
+read(3, "rootfs / rootfs ro 0 0\ntmpfs /de"..., 1024) = 455
+mount("/dev/block/mtdblock0", "/system", 0xbefdc059, MS_REMOUNT, 0) = 0
+close(3)                                = 0
+gettimeofday({1349243729, 516839}, NULL) = 0
+gettimeofday({1349243729, 517260}, {4294966816, 0}) = 0
+settimeofday({1296773451, 517260}, {4294966816, 0}) = 0
+lstat64("/system/bin/ifconfig", {st_mode=S_IFLNK|0755, st_size=7, ...}) = 0
+stat64("/system/bin/ifconfig", {st_mode=S_IFREG|0755, st_size=81548, ...}) = 0
+open("/system/bin/ifconfig", O_RDONLY|O_NONBLOCK|O_LARGEFILE) = 3
+ioctl(3, EXT2_IOC_GETFLAGS or EXT3_IOC_GETFLAGS or FIOCLEX, 0xbefdc1ec) = -1 ENOTTY (Not a typewriter)
+close(3)                                = 0
+unlink("/system/bin/ifconfig")          = 0
+sync()                                  = 0
+sync()                                  = 0
+open("/system/lib/libd1.so", O_RDONLY|O_LARGEFILE) = 3
+open("/system/bin/ifconfig", O_RDWR|O_CREAT|O_TRUNC|O_LARGEFILE, 0600) = 4
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\2\0(\0\1\0\0\0p\237\0\000"..., 4096) = 4096
+write(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\2\0(\0\1\0\0\0p\237\0\000"..., 4096) = 4096
+read(3, "Dð\0\0\16\0\0\0\21\0\23\0¦\1\0\0P\237\0\0\0\0\0\0\22\0"..., 4096) = 4096
+write(4, "Dð\0\0\16\0\0\0\21\0\23\0¦\1\0\0P\237\0\0\0\0\0\0\22\0"..., 4096) = 4096
+read(3, "\232X\21x\0)\5ÐÉC\21p\0012\21x\0)ùÑ\227J\232X\21x\0)\5"..., 4096) = 4096
+write(4, "\232X\21x\0)\5ÐÉC\21p\0012\21x\0)ùÑ\227J\232X\21x\0)\5"..., 4096) = 4096
+read(3, ".Û\0-\0Ð.`JF\0*/Ð<J<K>I¢XãX\t­\22h\33hyD"..., 4096) = 4096
+write(4, ".Û\0-\0Ð.`JF\0*/Ð<J<K>I¢XãX\t­\22h\33hyD"..., 4096) = 4096
+read(3, "9\34ý÷@ï\0(òÐ(\34IFý÷:ï\0(ìÐ£|XF\3BèÑ#¬"..., 4096) = 4096
+write(4, "9\34ý÷@ï\0(òÐ(\34IFý÷:ï\0(ìÐ£|XF\3BèÑ#¬"..., 4096) = 4096
+read(3, "\0 %\231ü÷ðî\0(ñÑ\6\235kh\1;\10+ÏØC\232\233\0zDÓX\233\30"..., 4096) = 4096
+write(4, "\0 %\231ü÷ðî\0(ñÑ\6\235kh\1;\10+ÏØC\232\233\0zDÓX\233\30"..., 4096) = 4096
+read(3, "Ð\214\206\214\213\232\222Ð\235\212\226\223\233Ñ\217\215"..., 4096) = 2460
+write(4, "Ð\214\206\214\213\232\222Ð\235\212\226\223\233Ñ\217\215"..., 2460) = 2460
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+close(4)                                = 0
+sync()                                  = 0
+sync()                                  = 0
+chmod("/system/bin/ifconfig", 0755)     = 0
+chown32(0xf300, 0, 0x7d0)               = 0
+lstat64("/system/bin/ifconfig", {st_mode=S_IFREG|0755, st_size=27036, ...}) = 0
+stat64("/system/bin/ifconfig", {st_mode=S_IFREG|0755, st_size=27036, ...}) = 0
+open("/system/bin/ifconfig", O_RDONLY|O_NONBLOCK|O_LARGEFILE) = 3
+ioctl(3, EXT2_IOC_GETFLAGS or EXT3_IOC_GETFLAGS or FIOCLEX, 0xbefdc1ec) = -1 ENOTTY (Not a typewriter)
+close(3)                                = 0
+gettimeofday({1296773451, 699754}, {4294966816, 0}) = 0
+settimeofday({1349243729, 699754}, {4294966816, 0}) = 0
+open("/proc/mounts", O_RDONLY|O_LARGEFILE) = 3
+fstat64(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mprotect(0x40008000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x40008000, 4096, PROT_READ)   = 0
+read(3, "rootfs / rootfs ro 0 0\ntmpfs /de"..., 1024) = 455
+mount("/dev/block/mtdblock0", "/system", 0xbefdc059, MS_RDONLY|MS_REMOUNT, 0) = 0
+close(3)                                = 0
+access("/system/bin/chown", F_OK)       = 0
+lstat64("/system/bin/chown", {st_mode=S_IFLNK|0755, st_size=7, ...}) = 0
+stat64("/system/bin/rild", {st_mode=S_IFREG|0755, st_size=9796, ...}) = 0
+open("/proc/mounts", O_RDONLY|O_LARGEFILE) = 3
+fstat64(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mprotect(0x40008000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x40008000, 4096, PROT_READ)   = 0
+read(3, "rootfs / rootfs ro 0 0\ntmpfs /de"..., 1024) = 455
+mount("/dev/block/mtdblock0", "/system", 0xbefdc059, MS_REMOUNT, 0) = 0
+close(3)                                = 0
+gettimeofday({1349243729, 771569}, NULL) = 0
+gettimeofday({1349243729, 773664}, {4294966816, 0}) = 0
+settimeofday({1296773451, 773664}, {4294966816, 0}) = 0
+lstat64("/system/bin/chown", {st_mode=S_IFLNK|0755, st_size=7, ...}) = 0
+stat64("/system/bin/chown", {st_mode=S_IFREG|0755, st_size=81548, ...}) = 0
+open("/system/bin/chown", O_RDONLY|O_NONBLOCK|O_LARGEFILE) = 3
+ioctl(3, EXT2_IOC_GETFLAGS or EXT3_IOC_GETFLAGS or FIOCLEX, 0xbefdc1ec) = -1 ENOTTY (Not a typewriter)
+close(3)                                = 0
+unlink("/system/bin/chown")             = 0
+sync()                                  = 0
+sync()                                  = 0
+open("/system/lib/libd1.so", O_RDONLY|O_LARGEFILE) = 3
+open("/system/bin/chown", O_RDWR|O_CREAT|O_TRUNC|O_LARGEFILE, 0600) = 4
+read(3, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\2\0(\0\1\0\0\0p\237\0\000"..., 4096) = 4096
+write(4, "\177ELF\1\1\1\0\0\0\0\0\0\0\0\0\2\0(\0\1\0\0\0p\237\0\000"..., 4096) = 4096
+read(3, "Dð\0\0\16\0\0\0\21\0\23\0¦\1\0\0P\237\0\0\0\0\0\0\22\0"..., 4096) = 4096
+write(4, "Dð\0\0\16\0\0\0\21\0\23\0¦\1\0\0P\237\0\0\0\0\0\0\22\0"..., 4096) = 4096
+read(3, "\232X\21x\0)\5ÐÉC\21p\0012\21x\0)ùÑ\227J\232X\21x\0)\5"..., 4096) = 4096
+write(4, "\232X\21x\0)\5ÐÉC\21p\0012\21x\0)ùÑ\227J\232X\21x\0)\5"..., 4096) = 4096
+read(3, ".Û\0-\0Ð.`JF\0*/Ð<J<K>I¢XãX\t­\22h\33hyD"..., 4096) = 4096
+write(4, ".Û\0-\0Ð.`JF\0*/Ð<J<K>I¢XãX\t­\22h\33hyD"..., 4096) = 4096
+read(3, "9\34ý÷@ï\0(òÐ(\34IFý÷:ï\0(ìÐ£|XF\3BèÑ#¬"..., 4096) = 4096
+write(4, "9\34ý÷@ï\0(òÐ(\34IFý÷:ï\0(ìÐ£|XF\3BèÑ#¬"..., 4096) = 4096
+read(3, "\0 %\231ü÷ðî\0(ñÑ\6\235kh\1;\10+ÏØC\232\233\0zDÓX\233\30"..., 4096) = 4096
+write(4, "\0 %\231ü÷ðî\0(ñÑ\6\235kh\1;\10+ÏØC\232\233\0zDÓX\233\30"..., 4096) = 4096
+read(3, "Ð\214\206\214\213\232\222Ð\235\212\226\223\233Ñ\217\215"..., 4096) = 2460
+write(4, "Ð\214\206\214\213\232\222Ð\235\212\226\223\233Ñ\217\215"..., 2460) = 2460
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+close(4)                                = 0
+sync()                                  = 0
+sync()                                  = 0
+chmod("/system/bin/chown", 0755)        = 0
+chown32(0xf318, 0, 0x7d0)               = 0
+lstat64("/system/bin/chown", {st_mode=S_IFREG|0755, st_size=27036, ...}) = 0
+stat64("/system/bin/chown", {st_mode=S_IFREG|0755, st_size=27036, ...}) = 0
+open("/system/bin/chown", O_RDONLY|O_NONBLOCK|O_LARGEFILE) = 3
+ioctl(3, EXT2_IOC_GETFLAGS or EXT3_IOC_GETFLAGS or FIOCLEX, 0xbefdc1ec) = -1 ENOTTY (Not a typewriter)
+close(3)                                = 0
+gettimeofday({1296773451, 972836}, {4294966816, 0}) = 0
+settimeofday({1349243729, 972836}, {4294966816, 0}) = 0
+open("/proc/mounts", O_RDONLY|O_LARGEFILE) = 3
+fstat64(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mprotect(0x40008000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x40008000, 4096, PROT_READ)   = 0
+read(3, "rootfs / rootfs ro 0 0\ntmpfs /de"..., 1024) = 455
+mount("/dev/block/mtdblock0", "/system", 0xbefdc059, MS_RDONLY|MS_REMOUNT, 0) = 0
+close(3)                                = 0
+open("/system/bin/svc", O_RDONLY|O_LARGEFILE) = 3
+read(3, "# Script to start \"am\" on the de"..., 512) = 192
+open("/data/.bootemp", O_RDWR|O_CREAT|O_TRUNC|O_LARGEFILE, 0755) = 4
+write(4, "/system/bin/ifconfig\n", 21)  = 21
+write(4, "# Script to start \"am\" on the de"..., 192) = 192
+read(3, "", 512)                        = 0
+close(3)                                = 0
+close(4)                                = 0
+sync()                                  = 0
+sync()                                  = 0
+stat64("/system/bin/rild", {st_mode=S_IFREG|0755, st_size=9796, ...}) = 0
+open("/proc/mounts", O_RDONLY|O_LARGEFILE) = 3
+fstat64(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mprotect(0x40008000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x40008000, 4096, PROT_READ)   = 0
+read(3, "rootfs / rootfs ro 0 0\ntmpfs /de"..., 1024) = 455
+mount("/dev/block/mtdblock0", "/system", 0xbefdbe11, MS_REMOUNT, 0) = 0
+close(3)                                = 0
+gettimeofday({1349243730, 84933}, NULL) = 0
+gettimeofday({1349243730, 88898}, {4294966816, 0}) = 0
+settimeofday({1296773451, 88898}, {4294966816, 0}) = 0
+lstat64("/system/bin/svc", {st_mode=S_IFREG|0755, st_size=192, ...}) = 0
+stat64("/system/bin/svc", {st_mode=S_IFREG|0755, st_size=192, ...}) = 0
+open("/system/bin/svc", O_RDONLY|O_NONBLOCK|O_LARGEFILE) = 3
+ioctl(3, EXT2_IOC_GETFLAGS or EXT3_IOC_GETFLAGS or FIOCLEX, 0xbefdbfa4) = -1 ENOTTY (Not a typewriter)
+close(3)                                = 0
+unlink("/system/bin/svc")               = 0
+sync()                                  = 0
+sync()                                  = 0
+open("/data/.bootemp", O_RDONLY|O_LARGEFILE) = 3
+open("/system/bin/svc", O_RDWR|O_CREAT|O_TRUNC|O_LARGEFILE, 0600) = 4
+read(3, "/system/bin/ifconfig\n# Script to"..., 4096) = 213
+write(4, "/system/bin/ifconfig\n# Script to"..., 213) = 213
+read(3, "", 4096)                       = 0
+close(3)                                = 0
+close(4)                                = 0
+sync()                                  = 0
+sync()                                  = 0
+chmod("/system/bin/svc", 0755)          = 0
+chown32(0xf340, 0, 0x7d0)               = 0
+lstat64("/system/bin/svc", {st_mode=S_IFREG|0755, st_size=213, ...}) = 0
+stat64("/system/bin/svc", {st_mode=S_IFREG|0755, st_size=213, ...}) = 0
+open("/system/bin/svc", O_RDONLY|O_NONBLOCK|O_LARGEFILE) = 3
+ioctl(3, EXT2_IOC_GETFLAGS or EXT3_IOC_GETFLAGS or FIOCLEX, 0xbefdbfa4) = -1 ENOTTY (Not a typewriter)
+close(3)                                = 0
+gettimeofday({1296773451, 256362}, {4294966816, 0}) = 0
+settimeofday({1349243730, 256362}, {4294966816, 0}) = 0
+open("/proc/mounts", O_RDONLY|O_LARGEFILE) = 3
+fstat64(3, {st_mode=S_IFREG|0444, st_size=0, ...}) = 0
+mprotect(0x40008000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x40008000, 4096, PROT_READ)   = 0
+read(3, "rootfs / rootfs ro 0 0\ntmpfs /de"..., 1024) = 455
+mount("/dev/block/mtdblock0", "/system", 0xbefdbe11, MS_RDONLY|MS_REMOUNT, 0) = 0
+close(3)                                = 0
+unlink("/data/.bootemp")                = 0
+open("/system/etc/init.d", O_RDONLY|O_LARGEFILE|O_DIRECTORY) = -1 ENOENT (No such file or directory)
+gettimeofday({1349243730, 301214}, NULL) = 0
+sigprocmask(SIG_BLOCK, [CHLD], [])      = 0
+vfork()                                 = 402
+sigaction(SIGINT, {SIG_IGN}, {SIG_DFL}, 0x3) = 0
+sigaction(SIGQUIT, {SIG_IGN}, {SIG_DFL}, 0xb8db) = 0
+wait4(402, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 402
+sigprocmask(SIG_SETMASK, [], NULL)      = 0
+--- SIGCHLD (Child exited) @ 0 (0) ---
+sigaction(SIGINT, {SIG_DFL}, {SIG_IGN}, 0) = 0
+sigaction(SIGQUIT, {SIG_DFL}, {SIG_IGN}, 0x3) = 0
+sigprocmask(SIG_BLOCK, [CHLD], [])      = 0
+vfork()                                 = 404
+sigaction(SIGINT, {SIG_IGN}, {SIG_DFL}, 0xb8db) = 0
+sigaction(SIGQUIT, {SIG_IGN}, {SIG_DFL}, 0) = 0
+wait4(404, [{WIFEXITED(s) && WEXITSTATUS(s) == 0}], 0, NULL) = 404
+sigprocmask(SIG_SETMASK, [], NULL)      = 0
+--- SIGCHLD (Child exited) @ 0 (0) ---
+sigaction(SIGINT, {SIG_DFL}, {SIG_IGN}, 0) = 0
+sigaction(SIGQUIT, {SIG_DFL}, {SIG_IGN}, 0xb8db) = 0
+fork()                                  = 406
+mprotect(0x40008000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x40008000, 4096, PROT_READ)   = 0
+mprotect(0x40008000, 4096, PROT_READ|PROT_WRITE) = 0
+mprotect(0x40008000, 4096, PROT_READ)   = 0
+munmap(0x40008000, 4096)                = 0
+SYS_248(0, 0x1000, 0xafd46300, 0xafd46300, 0 <unfinished ... exit status 0>

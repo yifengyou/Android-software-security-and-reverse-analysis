@@ -1,0 +1,10 @@
+<resources>
+
+    <string name="app_name">freeapp</string>
+    <string name="free">Android安全软件免费版</string>
+    <string name="advanced">Android安全软件高级版</string>
+    <string name="pro">Android安全软件专业版</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">freeapp</string>
+
+</resources>
